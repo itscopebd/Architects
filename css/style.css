@@ -28,7 +28,7 @@
     line-height: 23px;
     text-align: center;
     color: var(--white-color);
-    margin: 20px;
+    margin-top: 20px;
 }
 
 .container {
@@ -43,6 +43,10 @@
     text-align: center;
     color: var(--tertiary-color);
     margin: 15px 0;
+}
+
+.section__gap {
+    margin: 100px 0;
 }
 
 /*-----------------
@@ -104,15 +108,110 @@ nav ul li a {
 /*----------------
  banner styles
 ------------------*/
-.banner{
+.banner {
     margin-top: 27px;
 }
 
 /*--------------------------
- features section styles
+ our team section styles
 ----------------------------*/
+section.our__team {
+    padding: 0 100px;
+}
 
-.feature__wrapper{
+.our__team__wrapper {
     display: flex;
     align-items: center;
+    gap: 90px;
+}
+
+.image__wrap {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.image__wrap img {
+    width: 100%;
+}
+
+.content__wrap {
+    width: 50%;
+}
+
+.our__team__wrapper .title {
+
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px;
+    color: var(--tertiary-color);
+
+}
+
+.our__team__wrapper .title span {
+    font-weight: 700;
+}
+
+.our__team__wrapper .title span:first-child {
+    color: var(--primary-color);
+
+}
+
+.our__team__wrapper .title span:last-child {
+    color: var(--secondary-color);
+
+}
+
+.our__team__wrapper .description {
+    text-align: left;
+}
+
+
+/*-----------------------
+ feature section styles
+-------------------------*/
+.feature__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+    text-align: left;
+}
+
+.feature_content {
+    width: 50%;
+}
+
+.feature_content .title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: var(--primary-color);
+    border-left: 5px solid var(--secondary-color);
+    padding-left: 13px;
+}
+.feature_content .description{
+    text-align: left;
+    margin: 25px 0;
+}
+.feature__image__wrap {
+    width: 50%;
+}
+
+.feature__image__wrap img {
+    width: 100%;
+}
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 30px 42px 5px 30px;
+    margin-bottom: 20px;
+}
+.card .sub__title{
+font-weight: 600;
+font-size: 20px;
+line-height: 23px;
+color: var(--primary-color);
 }
