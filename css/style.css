@@ -378,7 +378,7 @@ our sample section styles
 }
 
 .sponsors__wrapper>div {
-    width: 286px;
+    width: 241px;
 }
 
 .sponsors__wrapper>div img {
@@ -410,6 +410,22 @@ footer .container p {
 /*----------------------
  responsive styles  
 ------------------------*/
+
+ /*--------------------------------------------------
+  X-Large devices (large desktops, 1200px and up)
+-----------------------------------------------------*/
+@media (min-width: 1200px) and (max-width:1500px){ 
+    .feature__wrapper {
+        gap: 45px;
+    }
+    .feature__image__wrap img {
+        min-height: 1000px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+ }
+
 
 /*--------------------------------------------------
   Small devices (landscape phones, less than 768px)
@@ -548,8 +564,8 @@ X-Small devices (portrait phones, less than 576px)
 
 /* feature section  */
 .feature_content .title {
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 25px;
+    line-height: 33px;
 }
 
 /* facts section  */
