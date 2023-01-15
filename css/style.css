@@ -415,6 +415,10 @@ footer .container p {
   X-Large devices (large desktops, 1200px and up)
 -----------------------------------------------------*/
 @media (min-width: 1200px) and (max-width:1500px){ 
+
+    .brand {
+        width: 90%;
+    }
     .feature__wrapper {
         gap: 45px;
     }
@@ -430,6 +434,9 @@ footer .container p {
  @media (min-width: 992px) and (max-width:1199px){ 
     nav ul {
         gap: 25px;
+    }
+    .brand {
+        width: 90%;
     }
     .our__team__wrapper {
         gap: 50px;
@@ -463,6 +470,57 @@ footer .container p {
     }
   }
 
+ /*----------------------------------------
+  Medium devices (tablets, 768px and up)
+-------------------------------------------*/
+
+@media (min-width: 768px) and (max-width:991px){ 
+    .logo__title {
+        font-size: 35px;
+        line-height: 42px;
+    }
+    nav ul {
+        gap: 15px;
+    }
+    .brand {
+        width: 90%;
+    }
+    .brand__title {
+        font-size: 52px;
+        line-height: 65px;
+    }
+    .our__team__wrapper {
+        gap: 50px;
+        flex-direction: column;
+    }
+    .image__wrap {
+        width: 100%;
+    }
+    .content__wrap {
+        width: 100%;
+    }
+    .feature__wrapper {
+        gap: 30px;
+        flex-direction: column;
+    }
+    .feature_content {
+        width: 100%;
+    }
+    .feature__image__wrap {
+        width: 100%;
+    }
+    .features__btn {
+        left: 5%;
+    }
+    section.facts.section__gap{
+        margin-top: 180px;
+    }
+
+    .sponsors__wrapper {
+        justify-content: center;
+    }
+
+ }
 /*--------------------------------------------------
   Small devices (landscape phones, less than 768px)
   ---------------------------------------------------*/
@@ -520,6 +578,9 @@ footer .container p {
         font-size: 20px;
         line-height: 25px;
     }
+    .features__btn {
+        left: 5%;
+    }
 
     /* facts section  */
     section.facts.section__gap{
@@ -532,6 +593,7 @@ footer .container p {
         width: 200px;
         height: 200px;
     }
+
 
     /* our design sample  */
     .design__sample__wrapper {
