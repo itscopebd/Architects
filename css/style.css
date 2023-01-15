@@ -111,6 +111,9 @@ nav ul li a {
 .banner {
     margin-top: 27px;
 }
+section.banner img {
+    width: 100%;
+}
 
 /*--------------------------
  our team section styles
@@ -224,7 +227,7 @@ section.our__team {
 /*-------------------
  facts styles
 ---------------------*/
-.facts__title {
+.facts__section__title {
 
     font-weight: 700;
     font-size: 45px;
@@ -244,6 +247,7 @@ section.our__team {
     align-items: center;
     flex-wrap: wrap;
     margin-top: 60px;
+    gap: 30px;
 }
 
 .single__facts {
@@ -255,6 +259,14 @@ section.our__team {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: 1.5s;
+}
+.single__facts:hover {
+    background: #000;
+    color: #fff;
+    transition: 1.5s;
+    border: 1px solid #000;
+    color: var(--white-color);
 }
 
 .single__facts img {
@@ -272,12 +284,47 @@ section.our__team {
 
 }
 
-.single__facts h5 {
+.single__facts .facts__title {
     font-weight: 600;
     font-size: 20px;
     line-height: 23px;
     color: #727272;
 }
+.single__facts:hover .facts__title, .single__facts:hover .count{
+    transition: 1s;
+    color: #fff;
+ }
+/*------------------------
+ recent project styles  
+ -------------------------*/
+
+/* .recent__project{
+    text-align: center;
+    width: 95%;
+    margin: auto;
+    
+}
+
+.project__wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px; 
+    grid-auto-flow: dense;
+}
+
+.project__wrapper img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+.row__long{
+grid-row: span 2;
+}
+.column__long{
+    grid-column: 1/3;
+} */
+
 
 /*-----------------
  sponsors styles  
@@ -304,6 +351,7 @@ section.our__team {
     flex-wrap: wrap;
     align-items: center;
     margin-top: 50px;
+    gap: 30px;
 }
 
 .sponsors__wrapper>div {
