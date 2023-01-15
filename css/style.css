@@ -224,12 +224,12 @@ section.our__team {
 /*-------------------
  facts styles
 ---------------------*/
-.facts__title{
+.facts__title {
 
-font-weight: 700;
-font-size: 45px;
-line-height: 53px;
-color: var(--primary-color);
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: var(--primary-color);
 }
 
 .facts .description {
@@ -277,4 +277,60 @@ color: var(--primary-color);
     font-size: 20px;
     line-height: 23px;
     color: #727272;
+}
+
+/*-----------------
+ sponsors styles  
+ ------------------*/
+.sponsors {
+    text-align: center;
+}
+
+.section__title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: var(--primary-color);
+}
+
+.sponsors .description {
+    width: 39%;
+    margin: 20px auto;
+}
+
+.sponsors__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.sponsors__wrapper>div {
+    width: 286px;
+}
+
+.sponsors__wrapper>div img {
+    width: 50%;
+}
+
+/*---------------
+  footer styles 
+  ----------------*/
+footer {
+    margin-bottom: 30px;
+}
+
+footer .container {
+    text-align: center;
+    background-color: #FFF4E7;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+footer .container p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--dark-gray);
 }
