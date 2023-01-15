@@ -423,9 +423,45 @@ footer .container p {
         width: 100%;
         object-fit: cover;
     }
-
  }
 
+ /* Large devices (desktops, 992px and up) */
+
+ @media (min-width: 992px) and (max-width:1199px){ 
+    nav ul {
+        gap: 25px;
+    }
+    .our__team__wrapper {
+        gap: 50px;
+        flex-direction: column;
+    }
+    .image__wrap {
+        width: 100%;
+    }
+    .content__wrap {
+        width: 100%;
+    }
+    .feature__wrapper {
+        gap: 30px;
+        flex-direction: column;
+    }
+    .feature_content {
+        width: 100%;
+    }
+    .feature__image__wrap {
+        width: 100%;
+    }
+    .features__btn {
+        left: 5%;
+    }
+    section.facts.section__gap{
+        margin-top: 180px;
+    }
+
+    .sponsors__wrapper {
+        justify-content: center;
+    }
+  }
 
 /*--------------------------------------------------
   Small devices (landscape phones, less than 768px)
