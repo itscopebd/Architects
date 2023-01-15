@@ -111,6 +111,7 @@ nav ul li a {
 .banner {
     margin-top: 27px;
 }
+
 section.banner img {
     width: 100%;
 }
@@ -180,6 +181,7 @@ section.our__team {
     gap: 100px;
     align-items: center;
     text-align: left;
+    position: relative;
 }
 
 .feature_content {
@@ -200,14 +202,6 @@ section.our__team {
     margin: 25px 0;
 }
 
-.feature__image__wrap {
-    width: 50%;
-}
-
-.feature__image__wrap img {
-    width: 100%;
-}
-
 .card {
     background: #FFFFFF;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
@@ -223,6 +217,34 @@ section.our__team {
     color: var(--primary-color);
 }
 
+.feature__image__wrap {
+    width: 50%;
+}
+
+.feature__image__wrap img {
+    width: 100%;
+}
+
+.features__btn {
+    left: 48%;
+    bottom: -6%;
+    padding: 25px;
+    position: absolute;
+}
+
+.features__btn span {
+    display: block;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 70px;
+}
+
+.features__btn small {
+    display: block;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+}
 
 /*-------------------
  facts styles
@@ -261,6 +283,7 @@ section.our__team {
     flex-direction: column;
     transition: 1.5s;
 }
+
 .single__facts:hover {
     background: #000;
     color: #fff;
@@ -290,10 +313,13 @@ section.our__team {
     line-height: 23px;
     color: #727272;
 }
-.single__facts:hover .facts__title, .single__facts:hover .count{
+
+.single__facts:hover .facts__title,
+.single__facts:hover .count {
     transition: 1s;
     color: #fff;
- }
+}
+
 /*------------------------
  recent project styles  
  -------------------------*/
@@ -381,4 +407,103 @@ footer .container p {
     font-size: 20px;
     line-height: 23px;
     color: var(--dark-gray);
+}
+
+
+/*----------------------
+ responsive styles  
+------------------------*/
+
+/*--------------------------------------------------
+  Small devices (landscape phones, less than 768px)
+  ---------------------------------------------------*/
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 25px;
+    }
+
+    .brand,
+    .content__wrap,
+    .feature_content,
+    .feature__image__wrap   {
+        width: 100%;
+    }
+
+    .brand__title {
+        font-size: 50px;
+        line-height: 56px;
+
+    }
+    section.our__team {
+        padding: 0;
+    }
+
+    .our__team__wrapper {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .image__wrap {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .feature__wrapper {
+        gap: 40px;
+        flex-direction: column;
+    }
+    .features__btn span {
+        font-size: 45px;
+        line-height: 48px;
+    }
+    .features__btn {
+        left: 0;
+        bottom: -5%;
+    }
+    .features__btn small {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    /* facts section  */
+    section.facts.section__gap{
+        margin-top: 152px;
+    }
+    .facts .description {
+        width: 80%;
+    }
+    .single__facts {
+        width: 200px;
+        height: 200px;
+    }
+    .count {
+        font-size: 35px;
+        line-height: 42px;
+    }
+    .single__facts .facts__title {
+        font-size: 18px;
+    }
+
+    /* sponsor section  */
+    section.sponsors.section__gap {
+        margin-bottom: 50px;
+    }
+    .sponsors .description {
+        width: 80%;
+    }
+    .sponsors__wrapper>div {
+        width: 200px;
+    }
+
+    /* footer section  */
+    footer .container p {
+        line-height: 36px;
+    }
 }
