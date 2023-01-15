@@ -321,36 +321,33 @@ section.our__team {
 }
 
 /*------------------------
- recent project styles  
+our sample section styles  
  -------------------------*/
-
-/* .recent__project{
+ .our__design__Sample .section__title{
     text-align: center;
-    width: 95%;
-    margin: auto;
+    margin-bottom: 40px;
+ }
+ .design__sample__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+   
+}
+.design__sample__wrapper > div{
+    overflow: hidden;
+}
+.design__sample__wrapper img {
+    width: 100%;
+    cursor: pointer;
+    filter: brightness(.5);
+    transition: .5s;
     
 }
-
-.project__wrapper{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 30px; 
-    grid-auto-flow: dense;
+.design__sample__wrapper img:hover{
+    filter: brightness(1);
+    transition: .5s;
+    transform: scale(1.1)
 }
-
-.project__wrapper img{
-    width: 100%;
-    height: 100%; 
-    object-fit: cover;
-}
-
-.row__long{
-grid-row: span 2;
-}
-.column__long{
-    grid-column: 1/3;
-} */
-
 
 /*-----------------
  sponsors styles  
@@ -483,6 +480,12 @@ footer .container p {
         width: 200px;
         height: 200px;
     }
+
+    /* our design sample  */
+    .design__sample__wrapper {
+        grid-template-columns: repeat(2,1fr);
+    }
+
     .count {
         font-size: 35px;
         line-height: 42px;
@@ -518,7 +521,7 @@ X-Small devices (portrait phones, less than 576px)
         font-size: 35px;
     }
     nav ul li a {
-        font-size: 17px;
+        font-size: 16px;
     }
     nav ul {
         gap: 13px;
@@ -559,6 +562,12 @@ X-Small devices (portrait phones, less than 576px)
 }
 .facts__wrapper {
     margin-top: 43px;
+}
+
+/* our design sample  */
+
+.design__sample__wrapper {
+    grid-template-columns: repeat(1,1fr);
 }
 
 /* sponsor section  */
