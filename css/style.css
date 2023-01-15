@@ -507,3 +507,75 @@ footer .container p {
         line-height: 36px;
     }
 }
+
+/*----------------------------------------------------
+X-Small devices (portrait phones, less than 576px)
+------------------------------------------------------*/
+@media (max-width: 576px) { 
+
+    /* menu bar  */
+    .logo__title {
+        font-size: 35px;
+    }
+    nav ul li a {
+        font-size: 17px;
+    }
+    nav ul {
+        gap: 13px;
+    }
+
+    /* brand section  */
+
+    .brand {
+        margin-top: 45px;
+    }
+    .brand__title {
+        font-size: 40px;
+        line-height: 46px;
+    }
+/* team section  */
+.image__wrap {
+    grid-template-columns: repeat(1, 1fr);
+
+}
+.our__team__wrapper .title {
+    font-size: 33px;
+    line-height: 41px;
+}
+
+/* feature section  */
+.feature_content .title {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+/* facts section  */
+.facts .description {
+    width: 100%;
+}
+.facts__section__title {
+    font-size: 40px;
+    line-height: 41px;
+}
+.facts__wrapper {
+    margin-top: 43px;
+}
+
+/* sponsor section  */
+section.sponsors.section__gap{
+    margin-top: 55px;
+}
+.section__title {
+    font-size: 38px;
+    line-height: 41px;
+}
+.sponsors__wrapper {
+    justify-content: center;
+}
+.sponsors__wrapper>div img {
+    width: 70%;
+}
+footer .container {
+    padding: 30px 0;
+}
+ }
